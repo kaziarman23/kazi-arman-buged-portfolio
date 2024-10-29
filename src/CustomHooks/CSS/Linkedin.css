@@ -1,0 +1,88 @@
+.Linkedin_light_button button.Linkedin_bt {
+  position: relative;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  outline: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.Linkedin_light_button button.Linkedin_bt .Linkedin_button_holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
+  /* background-color: #0a0a0a; */
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  transition: 300ms;
+  outline: #0f0f0f 2px solid;
+  outline-offset: 20;
+}
+
+.Linkedin_light_button button.Linkedin_bt .Linkedin_button_holder svg {
+  height: 50px;
+  /* fill: #0f0f0f; */
+  fill: white;
+  transition: 300ms;
+}
+
+.Linkedin_light_button button.Linkedin_bt .Linkedin_light_holder {
+  position: absolute;
+  height: 200px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Linkedin_light_button button.Linkedin_bt .Linkedin_light_holder .Linkedin_dot {
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.Linkedin_light_button
+  button.Linkedin_bt
+  .Linkedin_light_holder
+  .Linkedin_light {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  height: 200px;
+  clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+  background: transparent;
+}
+
+.Linkedin_light_button button.Linkedin_bt:hover .Linkedin_button_holder svg {
+  fill: rgba(0, 119, 181, 1); /* LinkedIn blue */
+}
+
+.Linkedin_light_button button.Linkedin_bt:hover .Linkedin_button_holder {
+  color: rgba(0, 119, 181, 1); /* LinkedIn blue */
+  outline: rgba(0, 119, 181, 1) 2px solid;
+  outline-offset: 2px;
+}
+
+.Linkedin_light_button
+  button.Linkedin_bt:hover
+  .Linkedin_light_holder
+  .Linkedin_light {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 119, 181, 1) 0%,
+    rgba(255, 255, 255, 0) 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
