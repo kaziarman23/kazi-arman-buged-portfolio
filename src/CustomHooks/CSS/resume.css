@@ -10,7 +10,7 @@
 
 .resume_label {
   background-color: transparent;
-  border: 2px solid rgb(91, 91, 240);
+  border: 2px solid rgb(37, 37, 216);
   display: flex;
   align-items: center;
   border-radius: 50px;
@@ -61,7 +61,7 @@
   height: 45px;
   width: 45px;
   border-radius: 50%;
-  background-color: rgb(91, 91, 240);
+  background-color: rgb(37, 37, 216);
   display: flex;
   justify-content: center;
   align-items: center;

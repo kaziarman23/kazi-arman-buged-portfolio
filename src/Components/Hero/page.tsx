@@ -3,7 +3,7 @@ import { Lora } from "next/font/google";
 import PortfolioImage from "../../../public/PortfolioImage.jpg";
 import ResumeBtn from "@/CustomHooks/ResumeBtn";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
-import { Spotlight } from "../ui/Spotlight";
+// import { Spotlight } from "../ui/Spotlight";
 
 const lora = Lora({
   weight: ["400", "700"],

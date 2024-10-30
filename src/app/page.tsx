@@ -1,13 +1,17 @@
 import AboutSection from "@/Components/AboutSection/page";
 import Hero from "@/Components/Hero/page";
+import Projects from "@/Components/Projects/page";
 import Skills from "@/Components/Skills/page";
 
-export default function Home() {
+const Home = () => {
   return (
-    <div>
+    <main>
       <Hero />
       <AboutSection />
       <Skills />
-    </div>
+      <Projects />
+    </main>
   );
-}
+};
+
+export default Home;

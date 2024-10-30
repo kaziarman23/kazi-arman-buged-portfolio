@@ -1,4 +1,4 @@
-import PyramidAnimation from "@/CustomHooks/PyramidAnimation";
+// import PyramidAnimation from "@/CustomHooks/PyramidAnimation";
 import Image from "next/image";
 
 // Importing Images
@@ -137,8 +137,8 @@ const Skills = () => {
       <div className="w-4/5 h-full mx-auto p-5">
         {/* section title */}
         <div className="flex items-center mb-10">
-          <PyramidAnimation />
-          <h1 className="text-4xl text-white">Skills</h1>
+          {/* <PyramidAnimation /> */}
+          <h1 className="text-4xl text-white hover:text-blue-500">Skills</h1>
         </div>
 
         {/* <div className="w-full h-full"> */}

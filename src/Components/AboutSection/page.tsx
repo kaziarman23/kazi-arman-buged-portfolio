@@ -3,7 +3,6 @@ import { PT_Serif } from "next/font/google";
 import { FaCode } from "react-icons/fa6";
 import { FaBookReader } from "react-icons/fa";
 // import AboutAnimation from "@/CustomHooks/AboutAnimation";
-// import { Sparkles } from "@/CustomHooks/Sparkles";
 
 const ptSerif = PT_Serif({
   weight: ["400", "700"],
@@ -40,8 +39,10 @@ const AboutSection = () => {
               {/* experience content */}
               <div className="w-1/2 h-40 border-2 rounded-xl flex justify-center items-center flex-col gap-2">
                 <div className="flex items-center gap-2">
-                  <FaCode className="w-8 h-8" />
-                  <h1 className=" font-bold text-2xl">Experience</h1>
+                  <FaCode className="w-8 h-8 hover:text-blue-500" />
+                  <h1 className="hover:text-blue-500 font-bold text-2xl">
+                    Experience
+                  </h1>
                 </div>
                 <p>6 month</p>
                 <h3>Frontend Development</h3>
@@ -49,8 +50,10 @@ const AboutSection = () => {
               {/* Education content */}
               <div className="w-1/2 h-40 border-2 rounded-xl flex justify-center items-center flex-col gap-2">
                 <div className="flex items-center gap-2">
-                  <FaBookReader className="w-8 h-8" />
-                  <h1 className=" font-bold text-2xl">Education</h1>
+                  <FaBookReader className="w-8 h-8 hover:text-blue-500" />
+                  <h1 className="hover:text-blue-500 font-bold text-2xl">
+                    Education
+                  </h1>
                 </div>
                 <p>Bachelor of Business Studies</p>
                 <h3>Feni Government College</h3>
@@ -60,7 +63,6 @@ const AboutSection = () => {
         </div>
         {/* animation content */}
         <div className="col-span-1 row-span-2 flex justify-center items-center">
-          {/* have to uncoment it latter */}
           {/* <AboutAnimation /> */}
         </div>
       </div>
