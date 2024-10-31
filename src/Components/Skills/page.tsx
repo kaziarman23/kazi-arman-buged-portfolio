@@ -133,7 +133,9 @@ const Skills = () => {
   ];
 
   return (
-    <div className="w-full h-full ">
+    <div 
+    id="Skills"
+    className="w-full h-full">
       <div className="w-4/5 h-full mx-auto p-5">
         {/* section title */}
         <div className="flex items-center mb-10">

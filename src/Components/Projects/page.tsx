@@ -16,7 +16,6 @@ const Projects: React.FC = () => {
             alt="carePoint image"
             className="object-fill w-4/5 h-1/2 mx-auto md:h-44 lg:h-60"
           />
-
           <div className="mt-10 flex justify-center items-center gap-5">
             <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
               Github
@@ -106,7 +105,9 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <div className="w-full h-full dark:bg-neutral-950">
+    <div 
+    id="Projects"
+    className="w-full h-full dark:bg-neutral-950">
       <div className="w-4/5 h-full mx-auto">
         <Timeline data={data} />
       </div>
