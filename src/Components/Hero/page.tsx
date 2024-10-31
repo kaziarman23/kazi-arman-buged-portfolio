@@ -17,10 +17,10 @@ const Hero = () => {
       id="About"
       className={`${lora.className} w-full h-full text-white xl:h-screen`}
     >
-      <Spotlight
+      {/* <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
-      />
+      /> */}
 
       <div className="w-full h-full mx-auto flex flex-col justify-center items-center md:flex-row xl:w-4/5">
         {/* nameinfo section */}

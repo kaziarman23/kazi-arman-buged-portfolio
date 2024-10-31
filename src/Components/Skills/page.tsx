@@ -1,4 +1,4 @@
-// import PyramidAnimation from "@/CustomHooks/PyramidAnimation";
+import PyramidAnimation from "@/CustomHooks/PyramidAnimation";
 import Image from "next/image";
 
 // Importing Images
@@ -133,32 +133,29 @@ const Skills = () => {
   ];
 
   return (
-    <div 
-    id="Skills"
-    className="w-full h-full">
-      <div className="w-4/5 h-full mx-auto p-5">
+    <div id="Skills" className="w-full h-full">
+      <div className="w-full h-full mx-auto p-4 lg:w-4/5 xl:p-5">
         {/* section title */}
         <div className="flex items-center mb-10">
           {/* <PyramidAnimation /> */}
           <h1 className="text-4xl text-white hover:text-blue-500">Skills</h1>
         </div>
 
-        {/* <div className="w-full h-full"> */}
         {/* front-end skill content */}
         <div className="space-y-3">
-          <h1 className="text-2xl text-white font-bold">
+          <h1 className="text-lg text-white font-bold xl:text-2xl">
             Front-End Development
           </h1>
-          <div className="grid grid-cols-5 grid-rows-2 gap-5 p-4">
+          <div className="w-full h-full grid grid-cols-2 mx-auto gap-2 sm:w-4/5 sm:grid-cols-3 lg:grid-cols-4 lg:w-full lg:mx-0 xl:grid-cols-5 xl:gap-5 xl:p-4">
             {frontendkills.map((item) => (
               <div
                 key={item.id}
-                className="w-40 h-40 flex justify-center items-center flex-col gap-3 hover:rounded-2xl hover:border-2  hover:border-blue-800 hover:text-white"
+                className="w-32 h-32 flex justify-center items-center flex-col gap-3 hover:rounded-2xl hover:border-2 hover:border-blue-800 hover:text-white xl:w-40 xl:h-40"
               >
                 <Image
                   src={item.img}
                   alt={item.title}
-                  className="w-16 h-16 object-cover"
+                  className="w-8 h-8 object-cover sm:w-10 sm:h-10 xl:w-16 xl:h-16"
                 />
                 <h1 className="text-xl">{item.title}</h1>
                 <p className="text-sm">{item.description}</p>
@@ -168,20 +165,20 @@ const Skills = () => {
         </div>
 
         {/* back-end skill content */}
-        <div className="space-y-3 mt-10">
-          <h1 className="text-2xl text-white font-bold">
+        <div className="space-y-3 mt-10 lg:mt-0">
+          <h1 className="text-lg text-white font-bold xl:text-2xl">
             Back-End Development
           </h1>
-          <div className="grid grid-cols-5  gap-5 p-4">
+          <div className="w-full h-full grid grid-cols-2 mx-auto gap-2 sm:w-4/5 sm:grid-cols-3 lg:grid-cols-4 lg:w-full lg:mx-0 xl:grid-cols-5 xl:gap-5 xl:p-4">
             {backendSkills.map((item) => (
               <div
                 key={item.id}
-                className="w-40 h-40 flex justify-center items-center flex-col gap-3 hover:rounded-2xl hover:border-2  hover:border-blue-800 hover:text-white"
+                className="w-32 h-32 flex justify-center items-center flex-col gap-3 hover:rounded-2xl hover:border-2 hover:border-blue-800 hover:text-white xl:w-40 xl:h-40"
               >
                 <Image
                   src={item.img}
                   alt={item.title}
-                  className="w-16 h-16 object-cover"
+                  className="w-8 h-8 object-cover sm:w-10 sm:h-10 xl:w-16 xl:h-16"
                 />
                 <h1 className="text-xl">{item.title}</h1>
                 <p className="text-sm">{item.description}</p>
@@ -192,21 +189,21 @@ const Skills = () => {
 
         {/* additionall skill content */}
         <div className="space-y-3 mt-10">
-          <h1 className="text-2xl text-white font-bold">
+          <h1 className="text-lg text-white font-bold xl:text-2xl">
             Additional Development
           </h1>
-          <div className="grid grid-cols-5 gap-5 p-4">
+          <div className="w-full h-full grid grid-cols-2 mx-auto gap-2 sm:w-4/5 sm:grid-cols-3 lg:grid-cols-4 lg:w-full lg:mx-0 xl:grid-cols-5 xl:gap-5 xl:p-4">
             {additionalskill.map((item) => (
               <div
                 key={item.id}
-                className="w-40 h-40 flex justify-center items-center flex-col gap-3 hover:rounded-2xl hover:border-2  hover:border-blue-800 hover:text-white"
+                className="w-32 h-32 flex justify-center items-center flex-col gap-3 hover:rounded-2xl hover:border-2 hover:border-blue-800 hover:text-white xl:w-40 xl:h-40"
               >
                 <Image
                   src={item.img}
                   alt={item.title}
-                  className="w-16 h-16 object-cover"
+                  className="w-8 h-8 object-cover sm:w-10 sm:h-10 xl:w-16 xl:h-16"
                 />
-                <h1 className="text-xl">{item.title}</h1>
+                <h1 className="text-sm sm:text-xl">{item.title}</h1>
                 <p className="text-sm">{item.description}</p>
               </div>
             ))}

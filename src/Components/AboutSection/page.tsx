@@ -15,7 +15,6 @@ const AboutSection = () => {
       className={`${ptSerif.className} w-full h-full text-white xl:h-screen`}
     >
       <div className="w-full h-full mx-auto  xl:w-4/5">
-        
         {/* title content */}
         <div className="flex justify-center items-center p-4 xl:justify-start xl:mt-10">
           <h1 className="text-lg text-white uppercase hover:text-blue-500 xl:text-3xl">
@@ -67,7 +66,7 @@ const AboutSection = () => {
 
           {/* animation content */}
           <div className="w-full flex justify-center items-center my-10 md:my-10 lg:w-1/3">
-            <AboutAnimation />
+            {/* <AboutAnimation /> */}
           </div>
         </div>
       </div>
