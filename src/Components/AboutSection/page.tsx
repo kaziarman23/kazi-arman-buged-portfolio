@@ -66,7 +66,7 @@ const AboutSection = () => {
 
           {/* animation content */}
           <div className="w-full flex justify-center items-center my-10 md:my-10 lg:w-1/3">
-            {/* <AboutAnimation /> */}
+            <AboutAnimation />
           </div>
         </div>
       </div>

@@ -137,7 +137,7 @@ const Skills = () => {
       <div className="w-full h-full mx-auto p-4 lg:w-4/5 xl:p-5">
         {/* section title */}
         <div className="flex items-center mb-10">
-          {/* <PyramidAnimation /> */}
+          <PyramidAnimation />
           <h1 className="text-4xl text-white hover:text-blue-500">Skills</h1>
         </div>
 

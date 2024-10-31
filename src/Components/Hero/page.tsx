@@ -5,6 +5,7 @@ import ResumeBtn from "@/CustomHooks/ResumeBtn";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import Link from "next/link";
 import { Spotlight } from "../ui/Spotlight";
+import { MdOutlineMail } from "react-icons/md";
 
 const lora = Lora({
   weight: ["400", "700"],
@@ -17,10 +18,10 @@ const Hero = () => {
       id="About"
       className={`${lora.className} w-full h-full text-white xl:h-screen`}
     >
-      {/* <Spotlight
+      <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
-      /> */}
+      />
 
       <div className="w-full h-full mx-auto flex flex-col justify-center items-center md:flex-row xl:w-4/5">
         {/* nameinfo section */}
@@ -33,11 +34,12 @@ const Hero = () => {
           </h3>
 
           <div className="p-4 flex justify-center gap-2 items-center">
-            <Link href="#Contact">
-              <button className="px-4 py-2 text-sm bg-black text-white border-2 rounded-2xl hover:border-blue-500 md:px-6 md:py-3">
+            <button className="px-4 py-2 text-sm bg-black text-white border-2 rounded-2xl hover:border-blue-500 md:px-6 md:py-3 flex items-center">
+              <MdOutlineMail className="w-8 h-8 mr-2 sm:w-6 sm:h-6 lg:w-4 lg:h-4" />
+              <a href="mailto:Kaziarman@proton.me" target="_blank">
                 Quick Contact
-              </button>
-            </Link>
+              </a>
+            </button>
             <ResumeBtn />
           </div>
           {/* social button section */}
