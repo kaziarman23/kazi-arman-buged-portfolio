@@ -3,7 +3,6 @@ import { Lora } from "next/font/google";
 import PortfolioImage from "../../../public/PortfolioImage.jpg";
 import ResumeBtn from "@/CustomHooks/ResumeBtn";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
-import Link from "next/link";
 import { Spotlight } from "../ui/Spotlight";
 import { MdOutlineMail } from "react-icons/md";
 
