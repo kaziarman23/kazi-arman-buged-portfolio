@@ -1,7 +1,6 @@
 import Email from "@/CustomHooks/Email";
 import GithubBtn from "@/CustomHooks/GithubBtn";
 import LinkedinBtn from "@/CustomHooks/LinkedinBtn";
-import TimeLoop from "@/CustomHooks/TimeLoop";
 import React from "react";
 import RocketAnimationComponent from "../RocketAnimationComponent/page";
 
@@ -12,7 +11,6 @@ const Contact: React.FC = () => {
         <h4 className="text-2xl font-bold  text-center p-5">Get in Touch</h4>
         <div className="w-full h-4/5 flex justify-center items-center">
           <div className="w-full h-full text-white">
-            {/* <TimeLoop /> */}
             <h1 className="text-3xl font-bold text-center p-5 hover:text-blue-500 xl:text-5xl">
               Contact me
             </h1>
