@@ -9,7 +9,7 @@ const RocketAnimationComponent: React.FC = () => {
   const [isAnimating, setIsAnimating] = useState(false);
 
   // handle click
-  const handleRocketClick = (e) => {
+  const handleRocketClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     setIsAnimating(true);
 

@@ -1,13 +1,19 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import "./CSS/Rocket.css";
 
-const Rocket = ({ isAnimating }) => {
+interface RocketProps {
+  isAnimating: boolean;
+}
+
+const Rocket: React.FC<RocketProps> = ({ isAnimating }) => {
+  const checkboxRef = useRef<HTMLInputElement>(null);
+
   useEffect(() => {
-    const checkbox = document.getElementById("rocket_checkbox");
-    if (checkbox) {
-      checkbox.checked = isAnimating;
+    // const checkbox = document.getElementById("rocket_checkbox");
+    if (checkboxRef.current) {
+      checkboxRef.current.checked = isAnimating;
     }
   }, [isAnimating]);
 
