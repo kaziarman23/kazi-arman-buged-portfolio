@@ -9,7 +9,7 @@ const ptSerif = PT_Serif({
   subsets: ["latin"],
 });
 
-const AboutSection = () => {
+const AboutSection: React.FC = () => {
   return (
     <div
       className={`${ptSerif.className} w-full h-full text-white xl:h-screen`}
@@ -38,7 +38,7 @@ const AboutSection = () => {
             </p>
             <div className="flex flex-col justify-center items-center gap-4 my-10 md:flex-row">
               {/* experience content */}
-              {/* <div className="w-1/2 h-40 border-2 rounded-xl flex justify-center items-center flex-col gap-2"> */}
+
               <div className="w-4/5 h-40 border-2 rounded-xl flex justify-center items-center flex-col gap-2">
                 <div className="flex items-center gap-2">
                   <FaCode className="w-8 h-8 hover:text-blue-500" />
@@ -50,7 +50,6 @@ const AboutSection = () => {
                 <h3>Frontend Development</h3>
               </div>
               {/* Education content */}
-              {/* <div className="w-1/2 h-40 border-2 rounded-xl flex justify-center items-center flex-col gap-2"> */}
               <div className="w-4/5 h-40 border-2 rounded-xl flex justify-center items-center flex-col gap-2">
                 <div className="flex items-center gap-2">
                   <FaBookReader className="w-8 h-8 hover:text-blue-500" />

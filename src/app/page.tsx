@@ -24,4 +24,3 @@ export default Home;
 // have to wait for the updated nextjs version
 // Time: 2.32 
 // PM Date: 3/11/24 
-// I am the real loser....
